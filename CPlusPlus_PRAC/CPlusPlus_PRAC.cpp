@@ -13,6 +13,8 @@ int main()
 	strData.SetString("Helfwfwfwfwlo");
 	cout << strData.GetString() << endl;
 
+	CMyString strNewData = strData;
+	cout << strNewData.GetString() << endl;
 	return 0;
 }
 

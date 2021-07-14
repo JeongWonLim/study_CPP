@@ -4,9 +4,14 @@ class CMyString
 public:
 	CMyString();
 	~CMyString();
+	
+	//복사생성자
+	CMyString(const CMyString& rhs);
+	//대입연산자
+	CMyString& operator=(const CMyString& rhs);
 
 	int SetString(const char* pszParam);
-	const char* GetString();
+	const char* GetString() const;
 	void Release();
 
 
